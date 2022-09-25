@@ -1,0 +1,25 @@
+{
+  "name": "teco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "release": "standard-version",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.8",
+    "dotenv": "^16.0.2",
+    "fastify": "^4.6.0",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "jest": "^29.0.3",
+    "nodemon": "^2.0.20",
+    "standard-version": "^9.5.0"
+  }
+}
