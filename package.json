@@ -7,7 +7,7 @@
     "dev": "nodemon ./src/index.js",
     "lint": "eslint --ext .js src/",
     "release": "standard-version",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "eslint": "^8.24.0",
+    "husky": "^8.0.1",
     "jest": "^29.0.3",
     "nodemon": "^2.0.20",
     "standard-version": "^9.5.0"
