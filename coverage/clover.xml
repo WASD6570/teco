@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1664079068947" clover="3.2.0">
-  <project timestamp="1664079068947" name="All files">
-    <metrics statements="35" coveredstatements="33" conditionals="20" coveredconditionals="16" methods="3" coveredmethods="3" elements="58" coveredelements="52" complexity="0" loc="35" ncloc="35" packages="2" files="5" classes="5"/>
+<coverage generated="1664122023372" clover="3.2.0">
+  <project timestamp="1664122023372" name="All files">
+    <metrics statements="37" coveredstatements="34" conditionals="22" coveredconditionals="17" methods="3" coveredmethods="3" elements="62" coveredelements="54" complexity="0" loc="37" ncloc="37" packages="2" files="5" classes="5"/>
     <package name="config">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="default.js" path="C:\Users\nikov\code\teco\src\config\default.js">
@@ -11,14 +11,14 @@
       </file>
     </package>
     <package name="services">
-      <metrics statements="33" coveredstatements="31" conditionals="20" coveredconditionals="16" methods="3" coveredmethods="3"/>
+      <metrics statements="35" coveredstatements="32" conditionals="22" coveredconditionals="17" methods="3" coveredmethods="3"/>
       <file name="fetch.js" path="C:\Users\nikov\code\teco\src\services\fetch.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
       </file>
       <file name="get_ip.js" path="C:\Users\nikov\code\teco\src\services\get_ip.js">
-        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <metrics statements="11" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
@@ -26,8 +26,10 @@
         <line num="13" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
+        <line num="18" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
       </file>
       <file name="location.js" path="C:\Users\nikov\code\teco\src\services\location.js">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

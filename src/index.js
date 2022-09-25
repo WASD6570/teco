@@ -12,7 +12,7 @@ fastify.register(currentRoutes, { prefix: "/v1" });
 fastify.register(forecastRoutes, { prefix: "/v1" });
 
 fastify
-  .listen({ port })
+  .listen({ port, host: "0.0.0.0" })
   .then((address) => {
     fastify.log.info(`server listening on ${address}`);
   })
