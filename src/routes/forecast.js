@@ -2,7 +2,7 @@ const { getLocation } = require("../services/location");
 const { weather_api_key, weather_api_url } = require("../config/default.js");
 const fetch = require("../services/fetch.js");
 
-async function forecastRoutes(fastify, options) {
+async function forecastRoutes(fastify) {
   fastify.get("/forecast/:city", async (request, reply) => {
     try {
       const city = request.params.city;

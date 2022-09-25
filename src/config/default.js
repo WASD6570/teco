@@ -1,5 +1,6 @@
 require("dotenv").config();
 
+/*eslint-disable*/
 module.exports = {
   port: process.env.PORT,
   ipify: process.env.IPIFY,

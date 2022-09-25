@@ -1,6 +1,6 @@
 const { getLocation } = require("../services/location");
 
-async function locationRoutes(fastify, options) {
+async function locationRoutes(fastify) {
   fastify.get("/location", async (request, reply) => {
     try {
       const location = await getLocation(request);

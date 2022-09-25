@@ -1,7 +1,7 @@
 const { getLocation } = require("../services/location");
 const { getWeather } = require("../services/weather.js");
 
-async function currentRoutes(fastify, options) {
+async function currentRoutes(fastify) {
   fastify.get("/current/:city", async (request, reply) => {
     try {
       const city = request.params.city;
