@@ -15,6 +15,10 @@ const getIp = async (request) => {
     ip = await data.text();
   }
 
+  if (ip.split(".")[0].includes("172") || ip.split(".")[0].includes("192")) {
+    return (ip = "200.59.81.129");
+  }
+
   return ip;
 };
 
