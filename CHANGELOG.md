@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/WASD6570/teco/compare/v1.4.1...v1.5.0) (2022-09-28)
+
+
+### Features
+
+* prodscript ([16c7984](https://github.com/WASD6570/teco/commit/16c7984f029a4d652212b0a4ccf5e9ae063fd5af))
 
 ## [1.4.0](https://github.com/WASD6570/teco/compare/v1.3.0...v1.4.0) (2022-09-25)
 
