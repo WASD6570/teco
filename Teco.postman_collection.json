@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "7172ee40-4713-4aeb-be36-d718336afbc9",
+		"name": "Teco",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17908890"
+	},
+	"item": [
+		{
+			"name": "current",
+			"item": [
+				{
+					"name": "/v1/current",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/v1/current",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"current"
+							]
+						},
+						"description": "Example response:\n\n{  \n\"location\": {  \n\"name\": \"Albardon\",  \n\"region\": \"San Juan\",  \n\"country\": \"Argentina\",  \n\"lat\": -31.44,  \n\"lon\": -68.56,  \n\"tz_id\": \"America/Argentina/San_Juan\",  \n\"localtime_epoch\": 1664324602,  \n\"localtime\": \"2022-09-27 21:23\"  \n},  \n\"current\": {  \n\"last_updated_epoch\": 1664324100,  \n\"last_updated\": \"2022-09-27 21:15\",  \n\"temp_c\": 12.3,  \n\"temp_f\": 54.1,  \n\"is_day\": 0,  \n\"condition\": {  \n\"text\": \"Thundery outbreaks possible\",  \n\"icon\": \"//cdn.weatherapi.com/weather/64x64/night/200.png\",  \n\"code\": 1087  \n},  \n\"wind_mph\": 15,  \n\"wind_kph\": 24.1,  \n\"wind_degree\": 176,  \n\"wind_dir\": \"S\",  \n\"pressure_mb\": 1023,  \n\"pressure_in\": 30.21,  \n\"precip_mm\": 0.1,  \n\"precip_in\": 0,  \n\"humidity\": 69,  \n\"cloud\": 80,  \n\"feelslike_c\": 10,  \n\"feelslike_f\": 50,  \n\"vis_km\": 9,  \n\"vis_miles\": 5,  \n\"uv\": 1,  \n\"gust_mph\": 23,  \n\"gust_kph\": 37.1  \n}  \n}"
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/current/:city",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/v1/current/mendoza",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"current",
+								"mendoza"
+							]
+						},
+						"description": "Example response:\n\n{  \n\"location\": {  \n\"name\": \"Mendoza\",  \n\"region\": \"Mendoza\",  \n\"country\": \"Argentina\",  \n\"lat\": -32.88,  \n\"lon\": -68.82,  \n\"tz_id\": \"America/Argentina/Mendoza\",  \n\"localtime_epoch\": 1664324775,  \n\"localtime\": \"2022-09-27 21:26\"  \n},  \n\"current\": {  \n\"last_updated_epoch\": 1664324100,  \n\"last_updated\": \"2022-09-27 21:15\",  \n\"temp_c\": 17,  \n\"temp_f\": 62.6,  \n\"is_day\": 0,  \n\"condition\": {  \n\"text\": \"Partly cloudy\",  \n\"icon\": \"//cdn.weatherapi.com/weather/64x64/night/116.png\",  \n\"code\": 1003  \n},  \n\"wind_mph\": 5.6,  \n\"wind_kph\": 9,  \n\"wind_degree\": 360,  \n\"wind_dir\": \"N\",  \n\"pressure_mb\": 1025,  \n\"pressure_in\": 30.27,  \n\"precip_mm\": 0,  \n\"precip_in\": 0,  \n\"humidity\": 36,  \n\"cloud\": 50,  \n\"feelslike_c\": 17,  \n\"feelslike_f\": 62.6,  \n\"vis_km\": 10,  \n\"vis_miles\": 6,  \n\"uv\": 1,  \n\"gust_mph\": 6.7,  \n\"gust_kph\": 10.8  \n}  \n}"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "location",
+			"item": [
+				{
+					"name": "/v1/location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/v1/location",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"location"
+							]
+						},
+						"description": "Example Response:\n\n{  \n\"status\": \"success\",  \n\"country\": \"Argentina\",  \n\"countryCode\": \"AR\",  \n\"region\": \"J\",  \n\"regionName\": \"San Juan\",  \n\"city\": \"San Juan\",  \n\"zip\": \"5400\",  \n\"lat\": -31.4374,  \n\"lon\": -68.5612,  \n\"timezone\": \"America/Argentina/San_Juan\",  \n\"isp\": \"Sion S.A\",  \n\"org\": \"Sinectis S.A\",  \n\"as\": \"AS10617 SION S.A\",  \n\"query\": \"200.59.81.129\"  \n}"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "forecast",
+			"item": [
+				{
+					"name": "/v1/forecast/san Juan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/v1/forecast/san Juan",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"forecast",
+								"san Juan"
+							],
+							"query": [
+								{
+									"key": "days",
+									"value": "3",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/forecast",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/v1/forecast",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"v1",
+								"forecast"
+							],
+							"query": [
+								{
+									"key": "days",
+									"value": "3",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
