@@ -7,5 +7,5 @@ RUN yarn config set network-timeout 300000
 RUN yarn install
 COPY . .
 EXPOSE 3000
-CMD ["yarn", "dev"]
+CMD ["yarn", "start"]
 
